@@ -1,0 +1,27 @@
+{
+    "name": "brandon/nbt",
+    "type": "library",
+    "description": "A NBT parser that parses to native PHP types",
+    "keywords": [
+        "NBT",
+        "Miencraft",
+        "parse",
+        "decode",
+        "binary"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Brandon Fowler",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": [
+            "NBT.php"
+        ]
+    }
+}

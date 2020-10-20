@@ -14,7 +14,7 @@ An advantage of the approach of converting to PHP data types is that it is very 
 
 To install this libary, download the NBT.php file and load it using:
 ```php
-require NBT.php
+require 'NBT.php';
 ```
 
 ## Documentation
@@ -32,10 +32,12 @@ NBT::readFile( string $filename, string $wrapper = 'compress.zlib://' ) : array
 ```
 
 #### Parameters
+
 * **$filename** - The name of the file to read from
-* **$wrapper** - The wrapper to use to read the file, by default it is compress.zlib://. Change the wrapper to file:// to  read a uncompressed file.
+* **$wrapper** - The wrapper to use to read the file, by default it is `compress.zlib://`. Change the wrapper to `file://` to  read a uncompressed file.
 
 #### Returns
+
 An array with the NBT data converted to PHP.
 
 ### NBT::readString
@@ -47,9 +49,11 @@ NBT::readString( string $str ) : array
 ```
 
 #### Parameters
+
 * **$str** - The string to binary uncompressed NBT data. If you need to read compressed data, you'll likely need to use [`gzdecode`](https://www.php.net/manual/en/function.gzdecode) to decompress the string first.
 
 #### Returns
+
 An array with the NBT data converted to PHP.
 
 ### NBT::readStream
@@ -61,9 +65,12 @@ NBT::readStream( resource $stream ) : array
 ```
 
 #### Parameters
-* **$str** - A binary file stream to read the NBT data from.
+
+* **$str** - A binary
+ file stream to read the NBT data from.
 
 #### Returns
+
 An array with the NBT data converted to PHP.
 
 ### NBT::readTag
@@ -75,8 +82,14 @@ NBT::readTag( int $type, resource $stream ) : mixed
 ```
 
 #### Parameters
+
 * **$type** - The ID of the type of NBT tag. It is recommended to use one of the constants defined at the top of NBT.php.
 * **$stream** - The file stream to read from.
 
 #### Returns
+
 The NBT data read as PHP data, return type depends on the `$type` parameter.
+
+## Testing
+
+Tests for this script can be found in the `tests/test.php` php file. You may run `php tests/test.php` to test this script.
