@@ -12,7 +12,7 @@ An advantage of the approach of converting to PHP data types is that it is very 
 
 ## Installation
 
-To install this libary, download the NBT.php file and load it using:
+To install this library, download the NBT.php file and load it using:
 ```php
 require NBT.php
 ```
