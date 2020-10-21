@@ -12,7 +12,29 @@ An advantage of the approach of converting to PHP data types is that it is very 
 
 ## Installation
 
-To install this library, download the NBT.php file and load it using:
+## Composer
+
+This library can be downloaded using [Composer](https://getcomposer.org/). For example you can add the following to your `composer.json` file.
+
+```json
+{
+    "require": {
+        "brandon/nbt": "*"
+    }
+}
+```
+
+It is recommended to replace `*` with a version constraint.
+
+## Git
+
+There are several ways to download directly from GitHub, the only required file is `NBT.php`.
+
+- Download `NBT.php` via https://raw.githubusercontent.com/BrandonXLF/NBT.php/master/NBT.php
+- Clone repository using `git clone https://github.com/BrandonXLF/NBT.php`
+- Download code from GitHub
+
+After downloading, to use the library you would use:
 ```php
 require 'NBT.php';
 ```
